@@ -6,6 +6,13 @@ class Product {
             enumerable: true,
             configurable: false
         })
+        
+         Object.defineProperty(this, 'quantity', {
+            value: props.quantity,
+            writable: true,
+            enumerable: true,
+            configurable: false
+        })
         Object.defineProperty(this, 'price', {
             value: props.price,
             writable: true,
